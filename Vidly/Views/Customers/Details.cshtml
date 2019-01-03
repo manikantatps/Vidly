@@ -1,0 +1,23 @@
+﻿@model Vidly.Models.Customer
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+@if (Model != null)
+{
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>
+                @Model.Name
+            </td>
+        </tr>
+    </table>
+}
+else
+{
+    <h4>We don't have that Customer</h4>
+}
+
